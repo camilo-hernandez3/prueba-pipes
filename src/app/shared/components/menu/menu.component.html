@@ -1,0 +1,10 @@
+<p-menubar [model]="menuItems">
+  <p-button icon="pi pi-align-justify" (onClick)="sidebarVisible = true"></p-button>
+</p-menubar>
+
+
+<p-sidebar [(visible)]="sidebarVisible">
+  <ng-template pTemplate="header">Header Content</ng-template>
+  <ng-template pTemplate="content">Body Content</ng-template>
+  <ng-template pTemplate="footer">Footer Content</ng-template>
+</p-sidebar>
